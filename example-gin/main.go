@@ -3,25 +3,27 @@ package main
 import (
 	"log"
 	"net/http"
-	"github.com/gin-gonic/gin"
+	//"github.com/gin-gonic/gin"
 
-	//"example-gin/config/setting"
+	"example-gin/config"
+	"example-gin/router"
 )
 
 
 
 func init() {
-	//setting.Setup()
+	setting.Setup()
 }
 
 func main()  {
-    log.Println("main()")
+	log.Println("main()")
 
-	r := gin.Default()
-	r.GET("/", func(c *gin.Context) {
-	  c.JSON(http.StatusOK, gin.H{
-		"key": "val",
-	  })
-	})
-	r.Run("localhost:8000")
+	routersInit := router.InitRouter()
+	
+	server := &http.Server{
+		Handler: routersInit,
+	}
+
+	server.ListenAndServe()
+
 }
