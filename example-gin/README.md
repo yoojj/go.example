@@ -5,15 +5,23 @@ https://gin-gonic.com/
 
 
 ```bash 
-# 프로젝트 생성 
+# 프로젝트(모듈) 생성 
 go mod init example-gin
 
-# gin 설치 
+# 모듈 설치 
 go get -u github.com/gin-gonic/gin
 go get -u github.com/go-ini/ini
 
 # 실행 
-go run main.go 
+go run main.go
+
+
+# + auto reloading
+npm i -g nodemon
+nodemon -v 
+
+## nodemon.json 설정 후 실행 
+nodemon
 ```
 
 
