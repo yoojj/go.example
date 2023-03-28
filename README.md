@@ -1,5 +1,6 @@
 # go framework example
 
+http framework 
 - gin 
 - echo
 
@@ -13,3 +14,12 @@ go env
 # GOROOT=C:\Program Files\Go
 # GOPATH=C:\Users\yjj\go.example
 ```
+
+
+go tools 
+```
+# bin/
+- go-outline.exe
+- goimports.exe
+- gopls.exe
+``` 
