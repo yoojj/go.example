@@ -15,6 +15,12 @@ go get -u github.com/go-ini/ini
 # 실행 
 go run main.go
 
+# 빌드
+go build 
+
+# vscode task  
+# ctrl + shift + b 
+
 
 # + auto reloading
 npm i -g nodemon

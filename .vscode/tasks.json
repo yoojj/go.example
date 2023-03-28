@@ -1,0 +1,19 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+
+        {
+            "label": "Gin Build",
+            "type": "shell",
+            "command": "go build",
+            "options": {
+                "cwd": "${workspaceFolder}/example-gin"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+            
+    ]
+}
